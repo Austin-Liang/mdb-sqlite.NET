@@ -40,8 +40,8 @@ namespace mdb_sqlite.NET_Sample
             try
             {
                 // Initialize AccessExporter
-                AccessExporter exporter = new AccessExporter("Path\\To\\Your\\Accesss\\test.mdb");
-                exporter.export("Path\\To\\Create\\SQLiteDB\\new_db.sqlite");
+                AccessExporter exporter = new AccessExporter(@"Path\To\Your\Accesss\test.mdb");
+                exporter.export(@"Path\To\Create\SQLiteDB\new_db.sqlite");
                 // Dispose after use.
                 exporter.Dispose();
             }
